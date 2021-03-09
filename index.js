@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
     return res.send('Hello from node app!')
 })
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 })
+
+module.exports = server;
