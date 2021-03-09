@@ -2,10 +2,16 @@
   "name": "Lab3",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
   "repository": "https://github.com/mactrz/TravisDocker.git",
   "author": "Maciej_Trzasalski <mtrzsalski@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "chai": "^4.3.3",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "mocha": "^8.3.1"
   }
 }
