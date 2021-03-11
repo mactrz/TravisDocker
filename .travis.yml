@@ -1,8 +1,8 @@
-language: node_js
+services:
+  - docker
 
-node_js:
-  - 12
+before_install:
+  - docker build -t express_test/latest .
 
-cache:
-  directories:
-    - "node_modules"
+script:
+  - docker run express_test/latest npm run test
